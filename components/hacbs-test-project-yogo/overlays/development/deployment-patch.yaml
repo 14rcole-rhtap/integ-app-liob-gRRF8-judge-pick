@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-yogo
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rycole-appstudio/integration1-ctqf-tenant/integ-app-liob/hacbs-test-project-yogo@sha256:7d8f0e044fe2083d830d397d0ad4b152aac8ef083c01320090ea6680d73a2962
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
